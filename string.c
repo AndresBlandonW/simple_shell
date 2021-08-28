@@ -10,6 +10,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int len, j;
+
 	len = 0;
 	while (*(dest + len) != 0)
 	{
@@ -35,6 +36,7 @@ char *_strcat(char *dest, char *src)
 char *_strcpy(char *dest, char *src)
 {
 	int i;
+
 	i = 0;
 
 	while (*(src + i))
@@ -62,9 +64,10 @@ int _strlen(char *str)
 }
 
 /**
- * _strcmp - compares two strings
+ * _strncmp - compares two strings
  * @s1: string 1
  * @s2: string 2
+ * @len: lenth
  * Return: compares
  */
 int _strncmp(char *s1, char *s2, size_t len)
